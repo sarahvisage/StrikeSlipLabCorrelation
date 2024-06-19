@@ -1,0 +1,2 @@
+# Ignorer tous les dossiers qui commencent par 'E' suivi de trois chiffres
+/E[0-9][0-9][0-9]/

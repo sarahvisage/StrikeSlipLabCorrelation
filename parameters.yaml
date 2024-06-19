@@ -1,0 +1,57 @@
+general:
+  NumExp: 'E573' # Choose the name of the experience to view
+  scale: 'micrometre' # Choose the display unit (micrometre or millimetre  
+  VisibilitePlot: 1 # To display the figures choose 1 otherwise 0
+  Folder_NameOut: '' # Possibility of specifying the name of the saved figures folder, in addition to the default name
+
+frames:
+  first_frame: 1500 #null
+  last_frame : 1500 #null
+  
+filtre:
+  #'''Fonctionne mais ralenti beaucoup les temps de calcul'''
+  Filtre: 0 # Application of a filter to smooth the results (median of 10 pixels around a pixel)
+
+components:
+#''' Type of component (Choose 1 to have the component, otherwise 0)'''
+  DepNorm: 0 # Displacement norm
+  UxParallel: 1 # Displacement parallel to the fault
+  UyPerp: 0  # Displacement perpendicular to the fault
+  Shear: 0 # Incremental shear strain
+  SecondInv: 0 # Opposite of the second invariant
+  Curl: 0 # Curl
+  Divergence: 0  # Divergence
+  
+  #```NE FONCTIONNE PAS ENCORE```
+  seisme: 0 # To display frames with earthquakes ONLY if frames containing earthquakes 
+            # have been previously identified and the file exists seism exists
+
+profil:    
+  #''' Paramètre pour graph profil - Profil 2D, 3D et visualisation de l emplacement des profils '''
+  
+  profilVertical: 1 # Profils parallèles à l'axe y avec plot 2D (nouveau)
+  
+  profilV_1_mm: 320
+  profilV_2_mm: 930
+  profilV_3_mm: 1573
+  
+  #```NE FONCTIONNE PAS ENCORE```
+  profil3D: 0 # Profils obliques avec plot 2D et 3D (figure 2.13 du manuscrit) 
+  
+  profil1: 140 # emplacement du profil 1 sur l'axe X
+  profil2: 300 # emplacement du profil 2 sur l'axe X
+  profil3: 599 # emplacement du profil 3 sur l'axe X
+  NbProfil: 100 # Nombre de profils total (en dehors des 3 premiers profils)
+  PasProfil: 10 # pas entre les profils 
+
+other: 
+  Quivers: 0 # vecteur deplacement 
+  riedels: 0 # Pas à jour
+  
+visualization:
+  #''' Coordonnées de la fenêtre de visualisation des corrélations '''
+  Zoom: 1  # 1 = Applique les coordonnées ci-dessous, 0 = Applique les coordonnées maximales possibles
+  ymin_mm: 0
+  ymax_mm: 1100
+  xmin_mm: 304
+  xmax_mm: 1592
