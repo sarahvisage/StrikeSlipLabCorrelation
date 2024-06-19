@@ -1,2 +1,3 @@
 # Ignorer tous les dossiers qui commencent par 'E' suivi de trois chiffres
-/E[0-9][0-9][0-9]/
+Correlation_experience/E[0-9][0-9][0-9]/
+Figures/E[0-9][0-9][0-9]/
