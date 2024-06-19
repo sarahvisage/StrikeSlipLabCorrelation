@@ -1,3 +1,6 @@
 # Ignorer tous les dossiers qui commencent par 'E' suivi de trois chiffres
 Correlation_experience/E[0-9][0-9][0-9]/
 Figures/E[0-9][0-9][0-9]/
+Correlation_experience/.DS_Store
+Figures/.DS_Store
+.DS_Store
