@@ -1,16 +1,14 @@
 # README
 
 # StikeSlipLabCorrelation
-This project is a compilation of Python scripts that can be used to visualise and perform correlation calculations on images from experiments on analogue models of strike-slip faults and to generate corresponding figures. 
-
 
 ## Description
 
-Ce script Python permet de visualiser des corrélations sur des images d'expériences de modèles analogiques et de générer des figures correspondantes. Il est nécessaire d'organiser les fichiers et dossiers de manière spécifique pour que le script fonctionne correctement.
+Ce projet propose des scripts Python pour l'analyse de corrélation d'image de faille décrochante en laboratoire. Le projet est actuellement en développement et propose un seul script pour l'instant.
 
 ## Arborescence des dossiers
 
-L'arborescence des dossiers doit être la suivante :
+L'arborescence de dossiers nécessaire pour utiliser ce script est la suivante :
 
 ```
 Correlations/
@@ -42,28 +40,32 @@ Correlations/
 
 ### Description des dossiers et fichiers :
 
-- **scripts/** : Contient le script Python principal (`votre_script.py`) ainsi que les différentes fonctions nécessaires.
-- **Correlation_experience/** : Contient un dossier par expérience. Chaque dossier d'expérience doit contenir les fichiers de données (par exemple, `data1.csv`, `data2.csv`).
-- **figures/** : Les figures générées par le script seront enregistrées dans ce dossier.
-- **param_correl.xlsx** : Fichier Excel contenant les paramètres des expériences. Chaque ligne correspond à une expérience.
+- **scripts/** : Contient le script Python principal (`Visu_correl.py`) ainsi que les différentes fonctions nécessaires.
+- **Correlation_experience/** : Contient un dossier par expérience. Chaque dossier d'expérience doit contenir les fichiers de données.
+- **figures/** : Les figures générées par le script seront enregistrées dans ce dossier et organisées dans des dossiers par expérience et par composante.
+- **param_correl.xlsx** : Fichier Excel contenant les paramètres spécifiques des expériences. Chaque ligne correspond à une expérience.
+- **parameters.yaml** : Fichier contenant les paramètres du script.
 
 ## Prérequis
 
 Avant d'exécuter le script, assurez-vous d'avoir les éléments suivants installés :
 
 - Python 3.x
-- Les bibliothèques Python nécessaires (pandas, matplotlib, etc.)
+- Les bibliothèques Python nécessaires (numpy, scipy, pandas, matplotlib, tifffile, yaml, os)
 
-Vous pouvez installer les bibliothèques requises en utilisant la commande suivante :
+## Installation
+Clonez le dépôt :
 
 ```bash
-pip install -r requirements.txt
+git clone https://github.com/sarahvisage/StikeSlipLabCorrelation.git
 ```
+
 ## Utilisation
 1. Assurez-vous que l'arborescence des dossiers est correcte comme décrit ci-dessus.
-2. Remplissez le fichier param_correl.xlsx avec les paramètres de vos expériences. Chaque ligne doit correspondre à une expérience spécifique.
-3. Placez vos fichiers de données dans les dossiers respectifs sous Correlation_experience/.
-4. Exécutez le script principal depuis le dossier scripts/ :
+2. Modifiez le fichier config.yaml pour ajuster les paramètres du script.
+3. Remplissez le fichier param_correl.xlsx avec les paramètres de vos expériences. Chaque ligne doit correspondre à une expérience spécifique (voir ci-dessous pour remplir le tableau).
+4. Placez vos fichiers de données dans les dossiers respectifs sous Correlation_experience/.
+5. Exécutez le script principal depuis le dossier scripts/ :
 
 ```bash
 python scripts/Visu_correl.py

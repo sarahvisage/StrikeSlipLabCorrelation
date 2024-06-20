@@ -5,8 +5,8 @@ general:
   Folder_NameOut: '' # Possibility of specifying the name of the saved figures folder, in addition to the default name
 
 frames:
-  first_frame: 1500 #null
-  last_frame : 1500 #null
+  first_frame: 1500 #null si l'on veut utilisé les paramètres du fichier param_correl.xlsx
+  last_frame : 1500 #null si l'on veut utilisé les paramètres du fichier param_correl.xlsx
   
 filtre:
   #'''Fonctionne mais ralenti beaucoup les temps de calcul'''
@@ -45,7 +45,7 @@ profil:
   PasProfil: 10 # pas entre les profils 
 
 other: 
-  Quivers: 0 # vecteur deplacement 
+  Quivers: 0 # vecteur deplacement (EN COURS DE DEVELOPPEMENT)
   riedels: 0 # Pas à jour
   
 visualization:
