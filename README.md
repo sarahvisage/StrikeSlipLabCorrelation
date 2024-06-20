@@ -41,7 +41,7 @@ Correlations/
 ### Description des dossiers et fichiers :
 
 - **scripts/** : Contient le script Python principal (`Visu_correl.py`) ainsi que les différentes fonctions nécessaires.
-- **Correlation_experience/** : Contient un dossier par expérience. Chaque dossier d'expérience doit contenir les fichiers de données.
+- **Correlation_experience/** : Contient un dossier par expérience. Chaque dossier d'expérience doit contenir les fichiers de données. Si les corrélations sont stockées dans un disque dur externe, ne rien mettre dans 'Correlation_experience' et renseigner le nom du disque dur externe dans la colonne 'stock' du fichier param_correl.xlsx.
 - **figures/** : Les figures générées par le script seront enregistrées dans ce dossier et organisées dans des dossiers par expérience et par composante.
 - **param_correl.xlsx** : Fichier Excel contenant les paramètres spécifiques des expériences. Chaque ligne correspond à une expérience.
 - **parameters.yaml** : Fichier contenant les paramètres du script.
@@ -64,7 +64,7 @@ git clone https://github.com/sarahvisage/StikeSlipLabCorrelation.git
 1. Assurez-vous que l'arborescence des dossiers est correcte comme décrit ci-dessus.
 2. Modifiez le fichier config.yaml pour ajuster les paramètres du script.
 3. Remplissez le fichier param_correl.xlsx avec les paramètres de vos expériences. Chaque ligne doit correspondre à une expérience spécifique (voir ci-dessous pour remplir le tableau).
-4. Placez vos fichiers de données dans les dossiers respectifs sous Correlation_experience/.
+4. Placez vos fichiers de données dans les dossiers respectifs sous Correlation_experience/ ou renseigner le nom du disque dur externe dans lequel est stocké vont corrélations dans le fichier param_correl.xlsx. 
 5. Exécutez le script principal depuis le dossier scripts/ :
 
 ```bash
