@@ -61,6 +61,7 @@ git clone https://github.com/sarahvisage/StikeSlipLabCorrelation.git
 ```
 
 ## Utilisation
+
 1. Assurez-vous que l'arborescence des dossiers est correcte comme décrit ci-dessus.
 2. Modifiez le fichier config.yaml pour ajuster les paramètres du script.
 3. Remplissez le fichier param_correl.xlsx avec les paramètres de vos expériences. Chaque ligne doit correspondre à une expérience spécifique (voir ci-dessous pour remplir le tableau).
@@ -94,6 +95,8 @@ Exemple :
 | ... | Local | 0.0125 | 2 | 0 | 1  
 
 
-
+$$
+4+2=6
+$$
 
 
