@@ -1,12 +1,12 @@
 general:
   NumExp: 'E573' # Choose the name of the experience to view
   scale: 'micrometre' # Choose the display unit (micrometre or millimetre  
-  VisibilitePlot: 1 # To display the figures choose 1 otherwise 0
+  VisibilitePlot: 0 # To display the figures choose 1 otherwise 0
   Folder_NameOut: '' # Possibility of specifying the name of the saved figures folder, in addition to the default name
 
 frames:
-  first_frame: 1500 #null si l'on veut utilisé les paramètres du fichier param_correl.xlsx
-  last_frame : 1500 #null si l'on veut utilisé les paramètres du fichier param_correl.xlsx
+  first_frame: 600 #null si l'on veut utilisé les paramètres du fichier param_correl.xlsx
+  last_frame : 700 #null si l'on veut utilisé les paramètres du fichier param_correl.xlsx
   
 filtre:
   #'''Fonctionne mais ralenti beaucoup les temps de calcul'''
@@ -31,9 +31,9 @@ profil:
   
   profilVertical: 1 # Profils parallèles à l'axe y avec plot 2D (nouveau)
   
-  profilV_1_mm: 320
+  profilV_1_mm: 600
   profilV_2_mm: 930
-  profilV_3_mm: 1573
+  profilV_3_mm: 1300
   
   #```NE FONCTIONNE PAS ENCORE```
   profil3D: 0 # Profils obliques avec plot 2D et 3D (figure 2.13 du manuscrit) 

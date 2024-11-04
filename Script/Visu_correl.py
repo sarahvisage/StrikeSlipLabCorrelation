@@ -107,7 +107,7 @@ if DD == 'Local':
         Correl_path = f"{path_base}Correlation_experience\\{NumExp}\\"
 else:
     if os.name == 'posix':
-        Correl_path = f"/Volumes/{DD}/{NumExp}/"
+        Correl_path = f"/media/sarah/{DD}/{NumExp}/"
     elif os.name == 'nt':
         Correl_path = f"{DD}:\\{NumExp}\\"
         

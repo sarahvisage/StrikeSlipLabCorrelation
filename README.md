@@ -51,7 +51,7 @@ Correlations/
 Avant d'exécuter le script, assurez-vous d'avoir les éléments suivants installés :
 
 - Python 3.x
-- Les bibliothèques Python nécessaires (numpy, scipy, pandas, matplotlib, tifffile, yaml, os)
+- Les bibliothèques Python nécessaires (numpy, scipy, pandas, matplotlib, tifffile, cmcrameri et openpyxl)
 
 ## Installation
 Clonez le dépôt :
